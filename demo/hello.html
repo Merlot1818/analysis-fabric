@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Hello Fabric</title>
+    <script src="./dist/fabric.js"></script>
+</head>
+
+<body onload="load();">
+    <canvas id="c" width="1600" height="700" style="background: rgba(200, 0, 0, 0.0); z-index: inherit 100;"></canvas>
+    <script>
+
+        function load() {
+            var canvas = new fabric.Canvas('c');
+
+            // create a rectangle object
+            var rect = new fabric.Rect({
+                left: 100,
+                top: 100,
+                fill: 'red',
+                width: 20,
+                height: 20
+            });
+
+            // "add" rectangle onto canvas
+            canvas.add(rect);
+        }
+    </script>
+</body>
+
+</html>
